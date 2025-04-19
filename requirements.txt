@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+pymupdf==1.25.5
+pytesseract==0.3.13
+pdf2image==1.17.0
+Pillow
+python-dotenv
+google-genai==1.9.0
+fuzzywuzzy
+fastapi 
+uvicorn 
+pyngrok 
+nest-asyncio

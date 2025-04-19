@@ -1,0 +1,442 @@
+[
+    {
+        "id": "mnt013",
+        "name": "Prof. Manish Desai",
+        "title": "AI & ML Expert",
+        "department": "Computer Science",
+        "expertise": [
+            "AI",
+            "Machine Learning",
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "experience_years": 18,
+        "rating": 5.0,
+        "satisfaction_rate": "96%",
+        "session_price": 250.0,
+        "free_sessions_available": [
+            "2025-05-12T09:30:00",
+            "2025-05-13T13:00:00"
+        ],
+        "contact_email": "manish.desai@aiinstitute.in",
+        "image": "https://dummyimage.com/256x256/ff0000/ffffff"
+    },
+    {
+        "id": "mnt014",
+        "name": "Dr. Nisha Verma",
+        "title": "Cybersecurity Specialist",
+        "department": "Information Security",
+        "expertise": [
+            "Ethical Hacking",
+            "Network Security",
+            "Cryptography",
+            "Forensics"
+        ],
+        "experience_years": 12,
+        "rating": 4.7,
+        "satisfaction_rate": "92%",
+        "session_price": 220.0,
+        "free_sessions_available": [
+            "2025-05-14T10:00:00",
+            "2025-05-15T16:00:00"
+        ],
+        "contact_email": "nisha.verma@securesystems.in",
+        "image": "https://dummyimage.com/256x256/008000/ffffff"
+    },
+    {
+        "id": "mnt015",
+        "name": "Prof. Rajesh Kumar",
+        "title": "Full-Stack Developer",
+        "department": "Computer Science",
+        "expertise": [
+            "Web Development",
+            "Node.js",
+            "React",
+            "Cloud Computing"
+        ],
+        "experience_years": 9,
+        "rating": 4.6,
+        "satisfaction_rate": "89%",
+        "session_price": 140.0,
+        "free_sessions_available": [
+            "2025-05-16T11:00:00",
+            "2025-05-17T14:00:00"
+        ],
+        "contact_email": "rajesh.kumar@techinstitute.in",
+        "image": "https://placeimg.com/256/256/tech"
+    },
+    {
+        "id": "mnt016",
+        "name": "Dr. Sushma Singh",
+        "title": "Data Scientist",
+        "department": "Data Science",
+        "expertise": [
+            "Big Data",
+            "Machine Learning",
+            "AI",
+            "Data Analytics"
+        ],
+        "experience_years": 8,
+        "rating": 4.7,
+        "satisfaction_rate": "93%",
+        "session_price": 200.0,
+        "free_sessions_available": [
+            "2025-05-18T10:30:00",
+            "2025-05-19T14:30:00"
+        ],
+        "contact_email": "sushma.singh@datacorp.in",
+        "image": "https://placeimg.com/256/256/nature"
+    },
+    {
+        "id": "mnt017",
+        "name": "Dr. Amit Saxena",
+        "title": "Cloud Computing Specialist",
+        "department": "Cloud Technologies",
+        "expertise": [
+            "AWS",
+            "Azure",
+            "Cloud Security",
+            "DevOps"
+        ],
+        "experience_years": 13,
+        "rating": 4.8,
+        "satisfaction_rate": "94%",
+        "session_price": 210.0,
+        "free_sessions_available": [
+            "2025-05-20T09:00:00",
+            "2025-05-21T12:30:00"
+        ],
+        "contact_email": "amit.saxena@cloudtech.in",
+        "image": "https://dummyimage.com/256x256/0000ff/ffffff"
+    },
+    {
+        "id": "mnt018",
+        "name": "Prof. Shruti Joshi",
+        "title": "Software Engineering Expert",
+        "department": "Software Engineering",
+        "expertise": [
+            "Agile",
+            "Scrum",
+            "DevOps",
+            "Software Architecture"
+        ],
+        "experience_years": 10,
+        "rating": 4.6,
+        "satisfaction_rate": "91%",
+        "session_price": 180.0,
+        "free_sessions_available": [
+            "2025-05-22T15:00:00",
+            "2025-05-23T11:00:00"
+        ],
+        "contact_email": "shruti.joshi@softeng.in",
+        "image": "https://placekitten.com/256/256/tech"
+    },
+    {
+        "id": "mnt019",
+        "name": "Dr. Anjali Reddy",
+        "title": "Machine Learning Engineer",
+        "department": "Artificial Intelligence",
+        "expertise": [
+            "Deep Learning",
+            "TensorFlow",
+            "Keras",
+            "Neural Networks"
+        ],
+        "experience_years": 7,
+        "rating": 4.7,
+        "satisfaction_rate": "93%",
+        "session_price": 170.0,
+        "free_sessions_available": [
+            "2025-05-24T14:00:00",
+            "2025-05-25T16:30:00"
+        ],
+        "contact_email": "anjali.reddy@mlcorp.in",
+        "image": "https://placeimg.com/256/256/business"
+    },
+    {
+        "id": "mnt020",
+        "name": "Prof. Vivek Gupta",
+        "title": "IT Infrastructure Consultant",
+        "department": "Information Technology",
+        "expertise": [
+            "IT Infrastructure",
+            "Cloud Solutions",
+            "Virtualization",
+            "Networking"
+        ],
+        "experience_years": 14,
+        "rating": 4.9,
+        "satisfaction_rate": "95%",
+        "session_price": 230.0,
+        "free_sessions_available": [
+            "2025-05-28T10:00:00",
+            "2025-05-29T13:00:00"
+        ],
+        "contact_email": "vivek.gupta@itconsulting.in",
+        "image": "https://dummyimage.com/256x256/ff6600/ffffff"
+    },
+    {
+        "id": "mnt001",
+        "name": "Dr. Aarav Sharma",
+        "title": "Cloud Architect",
+        "department": "Cloud Computing",
+        "expertise": [
+            "AWS Cloud",
+            "Azure",
+            "Cloud Security",
+            "DevOps"
+        ],
+        "experience_years": 12,
+        "rating": 4.8,
+        "satisfaction_rate": "90%",
+        "session_price": 150.0,
+        "free_sessions_available": [
+            "2025-04-12T10:00:00",
+            "2025-04-13T14:00:00"
+        ],
+        "contact_email": "aarav.sharma@cloudexperts.in",
+        "image": "https://placeimg.com/256/256/any"
+    },
+    {
+        "id": "mnt002",
+        "name": "Prof. Rhea Patel",
+        "title": "Blockchain Expert",
+        "department": "Computer Science",
+        "expertise": [
+            "Blockchain",
+            "Cryptography",
+            "Ethereum",
+            "Smart Contracts"
+        ],
+        "experience_years": 8,
+        "rating": 4.5,
+        "satisfaction_rate": "85%",
+        "session_price": 120.0,
+        "free_sessions_available": [
+            "2025-04-15T13:00:00",
+            "2025-04-16T16:00:00"
+        ],
+        "contact_email": "rhea.patel@blockchainlab.in",
+        "image": "https://placekitten.com/256/256"
+    },
+    {
+        "id": "mnt003",
+        "name": "Dr. Vikram Sinha",
+        "title": "Cloud Solutions Lead",
+        "department": "Computer Applications",
+        "expertise": [
+            "AWS IAM",
+            "SAML/OAuth",
+            "Policy Management",
+            "Zero Trust Architecture"
+        ],
+        "experience_years": 14,
+        "rating": 5.0,
+        "satisfaction_rate": "99%",
+        "session_price": 20.0,
+        "free_sessions_available": [
+            "2025-04-14T09:30:00",
+            "2025-04-15T17:00:00"
+        ],
+        "contact_email": "vikram.sinha@cloudsecure.in",
+        "image": "https://dummyimage.com/256x256"
+    },
+    {
+        "id": "mnt004",
+        "name": "Dr. Amit Kumar",
+        "title": "Machine Learning Specialist",
+        "department": "Computer Science",
+        "expertise": [
+            "Deep Learning",
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "AI Ethics"
+        ],
+        "experience_years": 9,
+        "rating": 4.7,
+        "satisfaction_rate": "92%",
+        "session_price": 180.0,
+        "free_sessions_available": [
+            "2025-04-16T10:30:00",
+            "2025-04-17T14:30:00"
+        ],
+        "contact_email": "amit.kumar@aiexperts.in",
+        "image": "https://dummyimage.com/256x256/0000FF/808080"
+    },
+    {
+        "id": "mnt005",
+        "name": "Dr. Neha Gupta",
+        "title": "Data Science Lead",
+        "department": "Data Science",
+        "expertise": [
+            "Data Analytics",
+            "Machine Learning",
+            "Data Visualization",
+            "AI/ML Models"
+        ],
+        "experience_years": 10,
+        "rating": 4.6,
+        "satisfaction_rate": "89%",
+        "session_price": 150.0,
+        "free_sessions_available": [
+            "2025-04-18T11:00:00",
+            "2025-04-19T12:30:00"
+        ],
+        "contact_email": "neha.gupta@datainsights.in",
+        "image": "https://placeimg.com/256/256/tech"
+    },
+    {
+        "id": "mnt006",
+        "name": "Prof. Sandeep Verma",
+        "title": "Cybersecurity Expert",
+        "department": "Information Technology",
+        "expertise": [
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Risk Management"
+        ],
+        "experience_years": 15,
+        "rating": 4.9,
+        "satisfaction_rate": "94%",
+        "session_price": 200.0,
+        "free_sessions_available": [
+            "2025-04-22T09:00:00",
+            "2025-04-23T14:30:00"
+        ],
+        "contact_email": "sandeep.verma@cybersecure.in",
+        "image": "https://placeimg.com/256/256/business"
+    },
+    {
+        "id": "mnt007",
+        "name": "Dr. Priya Joshi",
+        "title": "AI Researcher",
+        "department": "Computer Science",
+        "expertise": [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Computer Vision",
+            "Data Science"
+        ],
+        "experience_years": 7,
+        "rating": 4.6,
+        "satisfaction_rate": "90%",
+        "session_price": 160.0,
+        "free_sessions_available": [
+            "2025-04-20T08:30:00",
+            "2025-04-21T15:00:00"
+        ],
+        "contact_email": "priya.joshi@ai-research.in",
+        "image": "https://dummyimage.com/256x256/ffcc00/000000"
+    },
+    {
+        "id": "mnt008",
+        "name": "Prof. Ravi Rao",
+        "title": "Big Data Consultant",
+        "department": "Computer Science",
+        "expertise": [
+            "Hadoop",
+            "Spark",
+            "Data Engineering",
+            "Data Analytics"
+        ],
+        "experience_years": 11,
+        "rating": 4.7,
+        "satisfaction_rate": "93%",
+        "session_price": 170.0,
+        "free_sessions_available": [
+            "2025-04-25T10:00:00",
+            "2025-04-26T13:00:00"
+        ],
+        "contact_email": "ravi.rao@bigdata.in",
+        "image": "https://placekitten.com/256/256"
+    },
+    {
+        "id": "mnt009",
+        "name": "Dr. Kavita Mehta",
+        "title": "Cloud Security Architect",
+        "department": "Information Technology",
+        "expertise": [
+            "Cloud Security",
+            "IAM",
+            "Zero Trust",
+            "Threat Intelligence"
+        ],
+        "experience_years": 13,
+        "rating": 4.8,
+        "satisfaction_rate": "91%",
+        "session_price": 190.0,
+        "free_sessions_available": [
+            "2025-04-30T11:00:00",
+            "2025-05-01T16:00:00"
+        ],
+        "contact_email": "kavita.mehta@cloudsec.in",
+        "image": "https://dummyimage.com/256x256"
+    },
+    {
+        "id": "mnt010",
+        "name": "Prof. Anil Kumar",
+        "title": "Data Science & AI Professor",
+        "department": "Data Science",
+        "expertise": [
+            "AI",
+            "Deep Learning",
+            "Data Analytics",
+            "Statistics"
+        ],
+        "experience_years": 16,
+        "rating": 4.9,
+        "satisfaction_rate": "97%",
+        "session_price": 220.0,
+        "free_sessions_available": [
+            "2025-05-05T12:00:00",
+            "2025-05-06T09:30:00"
+        ],
+        "contact_email": "anil.kumar@datascienceprof.in",
+        "image": "https://placeimg.com/256/256/tech"
+    },
+    {
+        "id": "mnt011",
+        "name": "Dr. Arvind Kumar",
+        "title": "AI & ML Researcher",
+        "department": "Artificial Intelligence",
+        "expertise": [
+            "Reinforcement Learning",
+            "Neural Networks",
+            "Supervised Learning",
+            "Deep Learning"
+        ],
+        "experience_years": 10,
+        "rating": 4.6,
+        "satisfaction_rate": "88%",
+        "session_price": 180.0,
+        "free_sessions_available": [
+            "2025-05-07T11:00:00",
+            "2025-05-08T14:00:00"
+        ],
+        "contact_email": "arvind.kumar@aimlresearch.in",
+        "image": "https://placeimg.com/256/256/nature"
+    },
+    {
+        "id": "mnt012",
+        "name": "Dr. Shweta Agarwal",
+        "title": "Cybersecurity Analyst",
+        "department": "Information Technology",
+        "expertise": [
+            "Incident Response",
+            "Security Architecture",
+            "Penetration Testing",
+            "Vulnerability Management"
+        ],
+        "experience_years": 12,
+        "rating": 4.8,
+        "satisfaction_rate": "90%",
+        "session_price": 200.0,
+        "free_sessions_available": [
+            "2025-05-10T15:30:00",
+            "2025-05-11T10:00:00"
+        ],
+        "contact_email": "shweta.agarwal@cybersecure.in",
+        "image": "https://placekitten.com/256/256/tech"
+    }
+]

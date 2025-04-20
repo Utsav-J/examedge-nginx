@@ -6,9 +6,41 @@ import shutil
 import uuid
 import json
 from typing import Optional
-from utils import insert_text_to_file,extract_text_from_pdf,extract_images_from_pdf,save_extraction_to_json,run_demo_pdf_data_extraction,extract_and_save_json,load_extracted_json,query_gemini_for_summary,process_pdf_with_gemini_summary,generate_mcqs_chunked,append_summary_path_to_metadata,get_books_google,load_main_topics,fetch_books_for_topics,yt_search,fetch_youtube_videos_for_topics,insert_text_to_file,load_json_file,match_faculty_with_topics
-from utils import YOUTUBE_API_KEY, GOOGLE_BOOKS_API, GEMINI_API_KEY,client
-from utils import UPLOAD_DIR, FACULTY_DATASET_PATH
+import re
+from fastapi import Body
+from pydantic import BaseModel
+from config import model
+class QueryRequest(BaseModel):
+    query: str
+
+from utils import (
+    insert_text_to_file,
+    extract_text_from_pdf,
+    extract_images_from_pdf,
+    save_extraction_to_json,
+    run_demo_pdf_data_extraction,
+    extract_and_save_json,
+    load_json_file,
+    query_gemini_for_summary,
+    process_pdf_with_gemini_summary,
+    generate_mcqs_chunked,
+    append_summary_path_to_metadata,
+    get_books_google,
+    load_main_topics,
+    fetch_books_for_topics,
+    yt_search,
+    fetch_youtube_videos_for_topics,
+    insert_text_to_file,
+    load_json_file,
+    match_faculty_with_topics,
+    extract_pages_from_response,
+    create_prompt,
+    build_context_from_json,
+    chunk_text,
+    load_document
+)
+
+from config import YOUTUBE_API_KEY, GOOGLE_BOOKS_API, client, UPLOAD_DIR, FACULTY_DATASET_PATH
 
 app = FastAPI(title="Exam Edge API",
             description="Exam Edge API for processing PDFs and generating summaries and MCQs",
@@ -232,5 +264,47 @@ async def root():
             "/generate-mcqs/{filename}": "Generate MCQs from uploaded PDF"
         }
     }
+
+@app.post("/chat-with-pdf/{filename}")
+async def chat_with_pdf(filename: str, request: QueryRequest=Body(...)):
+    """
+    Chat with an uploaded PDF using its extracted_data.json for RAG-based interaction.
+    """
+    try:
+        metadata_path = os.path.join(UPLOAD_DIR, f"{filename}_metadata.json")
+
+        if not os.path.exists(metadata_path):
+            raise HTTPException(status_code=404, detail="Metadata not found.")
+
+        with open(metadata_path, "r") as f:
+            metadata = json.load(f)
+
+        extracted_data_path = metadata.get("extractedDataJsonPath")
+
+        if not extracted_data_path or not os.path.exists(extracted_data_path):
+            raise HTTPException(status_code=404, detail="Extracted JSON data not found.")
+
+        # Load document and generate chunks
+        doc = load_document(extracted_data_path)
+        context_chunks = build_context_from_json(doc)
+
+        # Use user query from JSON payload
+        user_query = request.query
+        prompt = create_prompt(context_chunks, user_query)
+
+        # Generate response using your LLM
+        print("generating response")
+        response = model.generate_content(prompt)
+        print("generating pages")
+        pages_used = extract_pages_from_response(response.text)
+        print("returning")
+
+        return {
+            "response": response.text,
+            "pages_used": pages_used
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 # if __name__ == "__main__":
 #     uvicorn.run(app, host="0.0.0.0", port=8000)

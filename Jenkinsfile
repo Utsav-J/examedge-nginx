@@ -27,7 +27,6 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 script {
-                    // Overwrite deployment.yaml with updated image
                     writeFile file: 'deployment.yaml', text: """
 apiVersion: apps/v1
 kind: Deployment
